@@ -1,0 +1,68 @@
+dateModified: 1699740120
+email:
+  fromEmail: dymovich2015@mail.ru
+  fromName: craft
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: /var/www/html/web/uploads
+    type: craft\fs\Local
+    url: /uploads
+meta:
+  __names__:
+    2d262218-bf31-4a59-8a2e-c9426ceaa9aa: Content # Content
+    5c361d1e-6017-4adf-8640-d5ae4697717b: relatedProducts # relatedProducts
+    6b872adc-59d6-4c88-bc2e-3da36dce9594: Default # Default
+    6e4365fc-160b-48dc-9f7d-85ad72b138fc: Categorie # Categorie
+    7d2ec9bb-3721-4de3-a6f7-a22c52a85eee: Contact # Contact
+    8a477524-9b34-47ab-b807-ab232caa26a1: Product # Product
+    9db4bc4c-0a0b-411f-85fb-11b3cfa77af6: Contact # Contact
+    35e0920c-0f1a-4de3-a855-cd925e5aac85: Pages # Pages
+    0254b196-50ac-4bfa-b010-1f99281ca1b5: Common # Common
+    399d1529-28af-49f6-9eef-32bdcfb6fec8: Simple # Simple
+    668e7aaa-8b94-4b22-b980-38e1701e7d20: Default # Default
+    839dd7f1-0eb7-4069-bdb9-16ffd00a4887: craft # craft
+    860b4aa3-147f-43dd-a4bb-6b0577da1f93: Home # Home
+    982fb029-5dca-4953-8ae8-1ccffee6b3b7: Description # Description
+    7920aead-63d2-456d-9d49-5395aa85b1a0: Home # Home
+    263929d7-7103-4f6e-8e89-3b6c1f9e68dc: 'Products Categories' # Products Categories
+    af15f70b-19cc-45e2-9dbf-15b74f7e3cc7: Image # Image
+    cd21de08-f4ca-4d17-a254-fe9c888c9258: Price # Price
+    d7e1b0ea-7a60-4464-acb3-f76cab0a3805: images # images
+    e360b3e5-21a4-4612-a660-bfb24c3360a4: craft # craft
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  wheelform:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      cp_label: Forms
+      disabled_fields:
+        - email
+      from_email: nikidymo@student.arteveldehs.be
+      from_name: ''
+      recaptcha_min_score: '0.5'
+      recaptcha_public: ''
+      recaptcha_secret: ''
+      recaptcha_version: '3'
+      success_message: 'Thank You! we will review your submission shortly.'
+      volume_id: '1'
+system:
+  edition: solo
+  live: true
+  name: craft
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

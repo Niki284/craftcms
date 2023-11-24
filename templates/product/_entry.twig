@@ -1,0 +1,37 @@
+{% extends "/_layout/_base.twig" %}
+
+{% set products = craft.entries.section('products').limit(3).relatedTo(entry.category.one()).collect()%}
+
+
+{% block content %}
+	
+	<div class="cards">
+		<div class="card">
+			<div class="card__flex--b">
+				<div class="card__foto">
+						<img src="{{ entry.image.one().url }}" alt="{{ entry.title }}"/>
+					</div>
+					<div class="card__text card__flex__text">
+						<h1>{{entry.title}}</h1>
+						<p>{{entry.postDate|date}}</p>
+						<p>{{ entry.price }}</p>
+						<a href="/products/cat/{{entry.category.one().title}}">{{entry.category.one().title}}</a>
+					</div>
+				</div>
+			<div class="card__flex__text--info">
+				<p>{{ entry.description }}</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<h1>Related Products</h1>
+	<div class="cards">
+            {% for product in products %}
+                {% include 'product/_partials/_product_category.twig'  %}
+            {% endfor %}
+        </div>
+
+
+{% endblock %}

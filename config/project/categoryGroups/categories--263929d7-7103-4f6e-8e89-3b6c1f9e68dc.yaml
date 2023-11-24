@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  feeaf542-cf9f-4c70-955a-4b3afbdd6113:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 7b8214c5-0140-44cc-ac5f-06fbc22e0975
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cf407d51-5b24-41c3-8e76-903e0ef025a6
+        userCondition: null
+handle: categories
+name: 'Products Categories'
+siteSettings:
+  839dd7f1-0eb7-4069-bdb9-16ffd00a4887: # craft
+    hasUrls: true
+    template: product/index.twig
+    uriFormat: 'products/cat/{slug}'
+structure:
+  maxLevels: 2
+  uid: 274e72cb-c258-44d2-806d-fb0d0b399bfc

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: products
+name: Product
+propagationMethod: all
+siteSettings:
+  839dd7f1-0eb7-4069-bdb9-16ffd00a4887: # craft
+    enabledByDefault: true
+    hasUrls: true
+    template: product/_entry
+    uriFormat: 'products/{slug}'
+type: channel

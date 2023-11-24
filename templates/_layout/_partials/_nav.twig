@@ -1,0 +1,21 @@
+{# Navigation #}
+
+{#{% set siteUrl = craft.config.siteUrl %}#}
+{# .order('title desc')#}
+{% set entryQuery = craft.entries()
+  .section('pages')
+  
+   %}
+{% set pages = entryQuery.all() %}
+
+<nav>
+    <ul>
+        <li><a href="/" class="{{ (craft.app.request.fullUri == '') ? 'active ': '' }}">Home</a></li>
+        <li><a href="/product" class="{{ (craft.app.request.fullUri == 'product') ? 'active ': '' }}">Products</a></li>
+        <li><a href="/contact" class="{{ (craft.app.request.fullUri == 'contact') ? 'active ': '' }}">Contact</a></li>
+    {% for page in pages %}
+     {% set class = (craft.app.request.fullUri == page.uri) ? 'active ': '' %}
+        <li><a href="{{page.url}}" class="{{ class }}">{{page.title}}</a></li>
+    {% endfor %}
+    </ul>
+</nav>  

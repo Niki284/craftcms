@@ -1,0 +1,70 @@
+fieldLayouts:
+  f9d4f32e-2fb1-42c4-8654-8637067028fe:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 724770fb-261a-49c1-9c7e-5477f302b680
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2d262218-bf31-4a59-8a2e-c9426ceaa9aa # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3b03c68-5337-4220-b077-a880806e37e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: af15f70b-19cc-45e2-9dbf-15b74f7e3cc7 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e274a1c7-f09c-41cb-a041-04e310ce6ae7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: faca924a-65e7-41f1-bd3f-cc3b46b8fde1
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 35e0920c-0f1a-4de3-a855-cd925e5aac85 # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

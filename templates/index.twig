@@ -1,0 +1,36 @@
+{% extends "_layout/_base.twig" %}
+
+
+
+{% set products = craft.entries.section('products').limit(3) %}
+
+{% block content %}
+
+
+
+
+
+    <div class="container">
+        <div class="more">
+            <div class="more--link">
+                <h1>Welcom op craft</h1>
+                <p>Onze Website voor craften van de producten.
+                Weleren hoe kan je producten kopen.</p>
+                <h2>Top producten</h2>
+                <a href="/product">More producten</a>
+            </div>
+        </div>
+        <div class="cards">
+            {% for product in products %}
+                {% include '/product/_partials/_product_category'  %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+

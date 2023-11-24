@@ -1,0 +1,19 @@
+columnSuffix: wrirorpm
+contentColumnType: text
+fieldGroup: 0254b196-50ac-4bfa-b010-1f99281ca1b5 # Common
+handle: relatedproducts
+instructions: null
+name: relatedProducts
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

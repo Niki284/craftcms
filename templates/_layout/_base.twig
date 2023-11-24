@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ siteName }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+{% set results = craft.entries()
+  .search('search')
+  .all() %}
+
+<header>
+    <h1 class="Hproducts">{{ siteName }}</h1>
+
+    <div class="search-container">
+        <form action="{{siteUrl}}search" method="GET">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    {% include"_layout/_partials/_nav.twig" %}
+
+</header>
+
+<main> 
+
+    {% block content %} 
+    {% endblock %}
+
+</main>
+
+<footer>
+    <p> &copy; {{ siteName }} 2023</p>
+</footer>
+
+</body>
+</html>

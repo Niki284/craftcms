@@ -1,0 +1,42 @@
+{% extends "_layout/_base.twig" %}
+
+
+{% set products = craft.entries.section('products').all() %}
+{% if category is defined %}
+    {% set products = craft.entries.section('products').relatedTo(category).all() %}
+{% endif %}
+{% set categories = craft.categories.group('categories').all() %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Products</h1>
+            </div>
+            <div class="categorie_nav"> 
+                <li><a href="/product" class="{{ (craft.app.request.fullUri == 'product') ? 'active ': '' }}">Alle</a></li>
+               {% nav category in categories %}
+                <li>
+                    <a href="{{ category.url }}" class="{{ (craft.app.request.fullUri == category.uri) ? 'active ': '' }}">{{ category.title }}</a>
+                </li>
+                <ul class="sub">
+                {% ifchildren %}
+                    {% children %}
+                {% endifchildren %}
+                </ul>
+            {% endnav %}
+            </div>  
+        </div>
+
+
+
+
+
+        <div class="cards">
+            {% for product in products %}
+                {% include 'product/_partials/_product_category.twig'  %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
